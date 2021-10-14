@@ -21,9 +21,11 @@
 
 
 def fib(n):
+    # base case 1, fib(0) = 0
     if n == 0:
         return 0
     
+    # base case 2, fib(1) = 1
     if n == 1:
         return 1
     
@@ -31,5 +33,6 @@ def fib(n):
     return fib(n-1) + fib(n-2)
 
 
+#input feature 
 fib_num = int(input("Enter your fib number \n"))
 print(fib(fib_num))
